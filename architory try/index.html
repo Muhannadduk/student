@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library | Architory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="top-nav">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-text">ARCHITORY LIBRARY</span>
+        </div>
+        
+        <div class="menu-area">
+            <span class="menu-label">MENU</span>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>THE LIBRARY</h1>
+            <p>The ultimate guide to your architectural diagrams and analysis</p>
+            <a href="#cards-section" class="hero-btn">SHOW</a>
+            <div class="learn-more">
+                Library shelves
+                <div class="arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section" id="cards-section">
+        <div class="top">
+            <h1>Choose a shelf from our architectural library</h1>
+            <div class="arrows">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="cards active">
+                <a href="category.html?type=pngs" class="card">
+                    <span class="vertical">PNGs</span>
+                    <img class="icon" src="images/card-png-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>PNGs</h2>
+                            <p>PNG format preserves high image quality and sharp lines.</p>
+                        </div>
+                        <img src="images/card-png-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=vectors" class="card">
+                    <span class="vertical">VECTORS</span>
+                    <img class="icon" src="images/card-vector-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>VECTORS</h2>
+                            <p>Vector graphics maintain perfect quality at any scale.</p>
+                        </div>
+                        <img src="images/card-vector-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=textures" class="card">
+                    <span class="vertical">TEXTURES</span>
+                    <img class="icon" src="images/card-texture-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>TEXTURES</h2>
+                            <p>Textures add visual depth to architectural diagrams.</p>
+                        </div>
+                        <img src="images/card-texture-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=books" class="card">
+                    <span class="vertical">BOOKS</span>
+                    <img class="icon" src="images/card-books-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>BOOKS</h2>
+                            <p>Books provide structured architectural knowledge.</p>
+                        </div>
+                        <img src="images/card-books-full.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div class="cards">
+                <a href="category.html?type=analysis" class="card">
+                    <span class="vertical">SITE ANALYSIS</span>
+                    <img class="icon" src="images/card-analysis-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>SITE ANALYSIS</h2>
+                            <p>Understanding environmental and urban conditions.</p>
+                        </div>
+                        <img src="images/card-analysis-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=pinterest" class="card">
+                    <span class="vertical">PINTEREST</span>
+                    <img class="icon" src="images/card-pinterest-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>PINTEREST</h2>
+                            <p>Organize design inspirations and visual ideas.</p>
+                        </div>
+                        <img src="images/card-pinterest-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=inspiration" class="card">
+                    <span class="vertical">INSPIRATION</span>
+                    <img class="icon" src="images/card-inspiration-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>INSPIRATION</h2>
+                            <p>Generate unique architectural design concepts.</p>
+                        </div>
+                        <img src="images/card-inspiration-full.jpg">
+                    </div>
+                </a>
+                <a href="category.html?type=tools" class="card">
+                    <span class="vertical">OUR TOOLS</span>
+                    <img class="icon" src="images/card-tools-thumb.jpg">
+                    <div class="details">
+                        <div class="text">
+                            <h2>OUR TOOLS</h2>
+                            <p>Tools that help architects present ideas clearly.</p>
+                        </div>
+                        <img src="images/card-tools-full.jpg">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="exploded-section">
+        <div class="top" style="width: 90%; margin: 0 auto 30px auto;">
+            <h1 style="text-transform: uppercase;">Interactive Exploded View</h1>
+        </div>
+    
+        <div class="main-screen-frame">
+            <div class="corner tl"></div><div class="corner tr"></div>
+            <div class="corner bl"></div><div class="corner br"></div>
+    
+            <div class="map-container">
+                <div id="floor-1" class="floor-layer fixed-base active"><img src="images/floor1.png" alt="Base"></div>
+                <div id="floor-2" class="floor-layer moving-layer"><img src="images/floor2.png" alt="2"></div>
+                <div id="floor-3" class="floor-layer moving-layer"><img src="images/floor3.png" alt="3"></div>
+                <div id="floor-4" class="floor-layer moving-layer"><img src="images/floor4.png" alt="4"></div>
+                <div id="floor-5" class="floor-layer moving-layer"><img src="images/floor5.png" alt="5"></div>
+            </div>
+    
+            <div class="ui-bottom-right" dir="rtl">
+                <div class="info-rect">
+                    <h2 id="floor-title">GYMNASE AIMÉE LALLEMENT</h2>
+                    <p id="floor-desc">مدخل القاعة والمناطق الخدمية الأساسية مع الملاعب الجانبية.</p>
+                </div>
+    
+                <div class="control-box">
+                    <div class="level-indicator">
+                        <span class="lvl-label">LEVEL</span>
+                        <span id="current-lvl-num">01</span>
+                    </div>
+                    <div class="mini-grid-buttons">
+                        <button class="grid-btn" onclick="switchFloor(5, this)"></button>
+                        <button class="grid-btn" onclick="switchFloor(4, this)"></button>
+                        <button class="grid-btn" onclick="switchFloor(3, this)"></button>
+                        <button class="grid-btn" onclick="switchFloor(2, this)"></button>
+                        <button class="grid-btn active" id="default-btn" onclick="switchFloor(1, this)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="contact">
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+            <h2 class="footer-logo-text">ARCHITORY LIBRARY</h2>
+            <div class="social">
+                <a href="https://www.instagram.com/_architory_?igsh=MTR0dXZ2dDJjMWpxcg==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                <a href="mailto:architory@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <a href="https://pin.it/70o2SQbQT" target="_blank">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>CREATED BY ALSROUJI.ARCH</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
